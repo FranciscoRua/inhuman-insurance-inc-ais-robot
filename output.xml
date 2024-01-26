@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on win32)" generated="20240126 10:21:35.648" rpa="true" schemaversion="4">
+<suite id="s1" name="Consumer" source="c:\Users\francisco.j.rua\VSCode\inhuman-insurance-inc-ais-robot\consumer.robot">
+<test id="s1-t1" name="Consume traffic data work items" line="12">
+<kw name="For Each Input Work Item" library="RPA.Robocorp.WorkItems">
+<arg>Process traffic data</arg>
+<doc>Run a keyword or function for each work item in the input queue.</doc>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.916" level="INFO">${payload} = {'traffic_data': {'country': 'VCT', 'year': 2011, 'rate': 3.69293}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.916" endtime="20240126 10:21:36.921"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.922" level="INFO">${traffic_data} = {'country': 'VCT', 'year': 2011, 'rate': 3.69293}</msg>
+<status status="PASS" starttime="20240126 10:21:36.921" endtime="20240126 10:21:36.922"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.914" endtime="20240126 10:21:36.923"/>
+</kw>
+<msg timestamp="20240126 10:21:36.923" level="INFO">Releasing item '0' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.924" level="INFO">${payload} = {'traffic_data': {'country': 'SWError', 'year': 2019, 'rate': 3.13947}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.924" endtime="20240126 10:21:36.924"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.925" level="INFO">${traffic_data} = {'country': 'SWError', 'year': 2019, 'rate': 3.13947}</msg>
+<status status="PASS" starttime="20240126 10:21:36.925" endtime="20240126 10:21:36.925"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.923" endtime="20240126 10:21:36.926"/>
+</kw>
+<msg timestamp="20240126 10:21:36.926" level="INFO">Releasing item '1' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.927" level="INFO">${payload} = {'traffic_data': {'country': 'SWE', 'year': 2018, 'rate': 3.61718}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.927" endtime="20240126 10:21:36.927"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.928" level="INFO">${traffic_data} = {'country': 'SWE', 'year': 2018, 'rate': 3.61718}</msg>
+<status status="PASS" starttime="20240126 10:21:36.928" endtime="20240126 10:21:36.928"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.926" endtime="20240126 10:21:36.928"/>
+</kw>
+<msg timestamp="20240126 10:21:36.929" level="INFO">Releasing item '2' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.931" level="INFO">${payload} = {'traffic_data': {'country': 'SVN', 'year': 2018, 'rate': 4.52394}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.930" endtime="20240126 10:21:36.931"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.932" level="INFO">${traffic_data} = {'country': 'SVN', 'year': 2018, 'rate': 4.52394}</msg>
+<status status="PASS" starttime="20240126 10:21:36.931" endtime="20240126 10:21:36.932"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.929" endtime="20240126 10:21:36.932"/>
+</kw>
+<msg timestamp="20240126 10:21:36.932" level="INFO">Releasing item '3' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.933" level="INFO">${payload} = {'traffic_data': {'country': 'SGP', 'year': 2019, 'rate': 2.08609}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.933" endtime="20240126 10:21:36.933"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.934" level="INFO">${traffic_data} = {'country': 'SGP', 'year': 2019, 'rate': 2.08609}</msg>
+<status status="PASS" starttime="20240126 10:21:36.934" endtime="20240126 10:21:36.934"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.932" endtime="20240126 10:21:36.934"/>
+</kw>
+<msg timestamp="20240126 10:21:36.935" level="INFO">Releasing item '4' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.936" level="INFO">${payload} = {'traffic_data': {'country': 'NOR', 'year': 2019, 'rate': 2.12302}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.935" endtime="20240126 10:21:36.936"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.937" level="INFO">${traffic_data} = {'country': 'NOR', 'year': 2019, 'rate': 2.12302}</msg>
+<status status="PASS" starttime="20240126 10:21:36.936" endtime="20240126 10:21:36.937"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.935" endtime="20240126 10:21:36.937"/>
+</kw>
+<msg timestamp="20240126 10:21:36.937" level="INFO">Releasing item '5' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.938" level="INFO">${payload} = {'traffic_data': {'country': 'NLD', 'year': 2019, 'rate': 3.98313}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.938" endtime="20240126 10:21:36.938"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.939" level="INFO">${traffic_data} = {'country': 'NLD', 'year': 2019, 'rate': 3.98313}</msg>
+<status status="PASS" starttime="20240126 10:21:36.939" endtime="20240126 10:21:36.939"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.937" endtime="20240126 10:21:36.939"/>
+</kw>
+<msg timestamp="20240126 10:21:36.940" level="INFO">Releasing item '6' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.941" level="INFO">${payload} = {'traffic_data': {'country': 'MLT', 'year': 2019, 'rate': 4.10715}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.940" endtime="20240126 10:21:36.941"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.941" level="INFO">${traffic_data} = {'country': 'MLT', 'year': 2019, 'rate': 4.10715}</msg>
+<status status="PASS" starttime="20240126 10:21:36.941" endtime="20240126 10:21:36.941"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.940" endtime="20240126 10:21:36.942"/>
+</kw>
+<msg timestamp="20240126 10:21:36.942" level="INFO">Releasing item '7' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.943" level="INFO">${payload} = {'traffic_data': {'country': 'MDV', 'year': 2019, 'rate': 1.6277}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.942" endtime="20240126 10:21:36.943"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.944" level="INFO">${traffic_data} = {'country': 'MDV', 'year': 2019, 'rate': 1.6277}</msg>
+<status status="PASS" starttime="20240126 10:21:36.943" endtime="20240126 10:21:36.944"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.942" endtime="20240126 10:21:36.944"/>
+</kw>
+<msg timestamp="20240126 10:21:36.944" level="INFO">Releasing item '8' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.946" level="INFO">${payload} = {'traffic_data': {'country': 'LUX', 'year': 2019, 'rate': 4.07499}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.945" endtime="20240126 10:21:36.946"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.947" level="INFO">${traffic_data} = {'country': 'LUX', 'year': 2019, 'rate': 4.07499}</msg>
+<status status="PASS" starttime="20240126 10:21:36.946" endtime="20240126 10:21:36.947"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.944" endtime="20240126 10:21:36.947"/>
+</kw>
+<msg timestamp="20240126 10:21:36.947" level="INFO">Releasing item '9' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.948" level="INFO">${payload} = {'traffic_data': {'country': 'LCA', 'year': 2008, 'rate': 3.52918}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.948" endtime="20240126 10:21:36.948"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.948" level="INFO">${traffic_data} = {'country': 'LCA', 'year': 2008, 'rate': 3.52918}</msg>
+<status status="PASS" starttime="20240126 10:21:36.948" endtime="20240126 10:21:36.949"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.947" endtime="20240126 10:21:36.949"/>
+</kw>
+<msg timestamp="20240126 10:21:36.949" level="INFO">Releasing item '10' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.950" level="INFO">${payload} = {'traffic_data': {'country': 'KIR', 'year': 2019, 'rate': 1.92481}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.949" endtime="20240126 10:21:36.950"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.950" level="INFO">${traffic_data} = {'country': 'KIR', 'year': 2019, 'rate': 1.92481}</msg>
+<status status="PASS" starttime="20240126 10:21:36.950" endtime="20240126 10:21:36.950"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.949" endtime="20240126 10:21:36.950"/>
+</kw>
+<msg timestamp="20240126 10:21:36.951" level="INFO">Releasing item '11' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.951" level="INFO">${payload} = {'traffic_data': {'country': 'JPN', 'year': 2019, 'rate': 3.59908}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.951" endtime="20240126 10:21:36.951"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.952" level="INFO">${traffic_data} = {'country': 'JPN', 'year': 2019, 'rate': 3.59908}</msg>
+<status status="PASS" starttime="20240126 10:21:36.952" endtime="20240126 10:21:36.952"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.951" endtime="20240126 10:21:36.952"/>
+</kw>
+<msg timestamp="20240126 10:21:36.952" level="INFO">Releasing item '12' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.953" level="INFO">${payload} = {'traffic_data': {'country': 'ISR', 'year': 2019, 'rate': 3.90874}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.953" endtime="20240126 10:21:36.953"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.954" level="INFO">${traffic_data} = {'country': 'ISR', 'year': 2019, 'rate': 3.90874}</msg>
+<status status="PASS" starttime="20240126 10:21:36.953" endtime="20240126 10:21:36.954"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.953" endtime="20240126 10:21:36.955"/>
+</kw>
+<msg timestamp="20240126 10:21:36.955" level="INFO">Releasing item '13' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.956" level="INFO">${payload} = {'traffic_data': {'country': 'ISL', 'year': 2019, 'rate': 2.04915}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.955" endtime="20240126 10:21:36.956"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.957" level="INFO">${traffic_data} = {'country': 'ISL', 'year': 2019, 'rate': 2.04915}</msg>
+<status status="PASS" starttime="20240126 10:21:36.956" endtime="20240126 10:21:36.957"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.955" endtime="20240126 10:21:36.957"/>
+</kw>
+<msg timestamp="20240126 10:21:36.957" level="INFO">Releasing item '14' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.959" level="INFO">${payload} = {'traffic_data': {'country': 'IRL', 'year': 2019, 'rate': 3.13364}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.958" endtime="20240126 10:21:36.959"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.959" level="INFO">${traffic_data} = {'country': 'IRL', 'year': 2019, 'rate': 3.13364}</msg>
+<status status="PASS" starttime="20240126 10:21:36.959" endtime="20240126 10:21:36.959"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.958" endtime="20240126 10:21:36.960"/>
+</kw>
+<msg timestamp="20240126 10:21:36.960" level="INFO">Releasing item '15' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.961" level="INFO">${payload} = {'traffic_data': {'country': 'GTM', 'year': 2006, 'rate': 4.61297}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.960" endtime="20240126 10:21:36.961"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.961" level="INFO">${traffic_data} = {'country': 'GTM', 'year': 2006, 'rate': 4.61297}</msg>
+<status status="PASS" starttime="20240126 10:21:36.961" endtime="20240126 10:21:36.962"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.960" endtime="20240126 10:21:36.962"/>
+</kw>
+<msg timestamp="20240126 10:21:36.962" level="INFO">Releasing item '16' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.964" level="INFO">${payload} = {'traffic_data': {'country': 'GRD', 'year': 2014, 'rate': 4.59137}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.963" endtime="20240126 10:21:36.964"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.964" level="INFO">${traffic_data} = {'country': 'GRD', 'year': 2014, 'rate': 4.59137}</msg>
+<status status="PASS" starttime="20240126 10:21:36.964" endtime="20240126 10:21:36.964"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.962" endtime="20240126 10:21:36.964"/>
+</kw>
+<msg timestamp="20240126 10:21:36.965" level="INFO">Releasing item '17' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.965" level="INFO">${payload} = {'traffic_data': {'country': 'GBR', 'year': 2019, 'rate': 3.21187}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.965" endtime="20240126 10:21:36.965"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.966" level="INFO">${traffic_data} = {'country': 'GBR', 'year': 2019, 'rate': 3.21187}</msg>
+<status status="PASS" starttime="20240126 10:21:36.966" endtime="20240126 10:21:36.966"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.965" endtime="20240126 10:21:36.966"/>
+</kw>
+<msg timestamp="20240126 10:21:36.966" level="INFO">Releasing item '18' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.967" level="INFO">${payload} = {'traffic_data': {'country': 'FSM', 'year': 2019, 'rate': 0.15972}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.967" endtime="20240126 10:21:36.967"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.968" level="INFO">${traffic_data} = {'country': 'FSM', 'year': 2019, 'rate': 0.15972}</msg>
+<status status="PASS" starttime="20240126 10:21:36.967" endtime="20240126 10:21:36.968"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.966" endtime="20240126 10:21:36.968"/>
+</kw>
+<msg timestamp="20240126 10:21:36.968" level="INFO">Releasing item '19' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.969" level="INFO">${payload} = {'traffic_data': {'country': 'FIN', 'year': 2019, 'rate': 3.88637}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.969" endtime="20240126 10:21:36.969"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.970" level="INFO">${traffic_data} = {'country': 'FIN', 'year': 2019, 'rate': 3.88637}</msg>
+<status status="PASS" starttime="20240126 10:21:36.969" endtime="20240126 10:21:36.970"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.968" endtime="20240126 10:21:36.970"/>
+</kw>
+<msg timestamp="20240126 10:21:36.970" level="INFO">Releasing item '20' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.971" level="INFO">${payload} = {'traffic_data': {'country': 'EST', 'year': 2019, 'rate': 4.46408}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.971" endtime="20240126 10:21:36.971"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.972" level="INFO">${traffic_data} = {'country': 'EST', 'year': 2019, 'rate': 4.46408}</msg>
+<status status="PASS" starttime="20240126 10:21:36.972" endtime="20240126 10:21:36.972"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.971" endtime="20240126 10:21:36.973"/>
+</kw>
+<msg timestamp="20240126 10:21:36.973" level="INFO">Releasing item '21' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.974" level="INFO">${payload} = {'traffic_data': {'country': 'ESP', 'year': 2019, 'rate': 3.91405}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.973" endtime="20240126 10:21:36.974"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.974" level="INFO">${traffic_data} = {'country': 'ESP', 'year': 2019, 'rate': 3.91405}</msg>
+<status status="PASS" starttime="20240126 10:21:36.974" endtime="20240126 10:21:36.975"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.973" endtime="20240126 10:21:36.975"/>
+</kw>
+<msg timestamp="20240126 10:21:36.975" level="INFO">Releasing item '22' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.976" level="INFO">${payload} = {'traffic_data': {'country': 'DNK', 'year': 2019, 'rate': 3.69833}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.976" endtime="20240126 10:21:36.977"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.977" level="INFO">${traffic_data} = {'country': 'DNK', 'year': 2019, 'rate': 3.69833}</msg>
+<status status="PASS" starttime="20240126 10:21:36.977" endtime="20240126 10:21:36.977"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.976" endtime="20240126 10:21:36.977"/>
+</kw>
+<msg timestamp="20240126 10:21:36.978" level="INFO">Releasing item '23' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.978" level="INFO">${payload} = {'traffic_data': {'country': 'DEU', 'year': 2019, 'rate': 3.78353}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.978" endtime="20240126 10:21:36.978"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.979" level="INFO">${traffic_data} = {'country': 'DEU', 'year': 2019, 'rate': 3.78353}</msg>
+<status status="PASS" starttime="20240126 10:21:36.979" endtime="20240126 10:21:36.979"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.978" endtime="20240126 10:21:36.979"/>
+</kw>
+<msg timestamp="20240126 10:21:36.979" level="INFO">Releasing item '24' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.980" level="INFO">${payload} = {'traffic_data': {'country': 'CYP', 'year': 2013, 'rate': 4.9831}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.980" endtime="20240126 10:21:36.980"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.981" level="INFO">${traffic_data} = {'country': 'CYP', 'year': 2013, 'rate': 4.9831}</msg>
+<status status="PASS" starttime="20240126 10:21:36.980" endtime="20240126 10:21:36.981"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.980" endtime="20240126 10:21:36.981"/>
+</kw>
+<msg timestamp="20240126 10:21:36.981" level="INFO">Releasing item '25' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.982" level="INFO">${payload} = {'traffic_data': {'country': 'CHE', 'year': 2019, 'rate': 2.24644}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.982" endtime="20240126 10:21:36.983"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.983" level="INFO">${traffic_data} = {'country': 'CHE', 'year': 2019, 'rate': 2.24644}</msg>
+<status status="PASS" starttime="20240126 10:21:36.983" endtime="20240126 10:21:36.983"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.982" endtime="20240126 10:21:36.984"/>
+</kw>
+<msg timestamp="20240126 10:21:36.984" level="INFO">Releasing item '26' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.985" level="INFO">${payload} = {'traffic_data': {'country': 'AUT', 'year': 2019, 'rate': 4.86592}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.984" endtime="20240126 10:21:36.985"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.985" level="INFO">${traffic_data} = {'country': 'AUT', 'year': 2019, 'rate': 4.86592}</msg>
+<status status="PASS" starttime="20240126 10:21:36.985" endtime="20240126 10:21:36.986"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.984" endtime="20240126 10:21:36.986"/>
+</kw>
+<msg timestamp="20240126 10:21:36.986" level="INFO">Releasing item '27' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.987" level="INFO">${payload} = {'traffic_data': {'country': 'AUS', 'year': 2019, 'rate': 4.93914}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.987" endtime="20240126 10:21:36.988"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.988" level="INFO">${traffic_data} = {'country': 'AUS', 'year': 2019, 'rate': 4.93914}</msg>
+<status status="PASS" starttime="20240126 10:21:36.988" endtime="20240126 10:21:36.988"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.987" endtime="20240126 10:21:36.989"/>
+</kw>
+<msg timestamp="20240126 10:21:36.989" level="INFO">Releasing item '28' with COMPLETED state and exception: None</msg>
+<kw name="Process traffic data">
+<kw name="Get Work Item Payload" library="RPA.Robocorp.WorkItems">
+<var>${payload}</var>
+<doc>Get the full JSON payload for a work item.</doc>
+<msg timestamp="20240126 10:21:36.990" level="INFO">${payload} = {'traffic_data': {'country': 'ATG', 'year': 2019, 'rate': 0.0}}</msg>
+<status status="PASS" starttime="20240126 10:21:36.990" endtime="20240126 10:21:36.990"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${traffic_data}</var>
+<arg>${payload}[${WORK_ITEM_NAME}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240126 10:21:36.991" level="INFO">${traffic_data} = {'country': 'ATG', 'year': 2019, 'rate': 0.0}</msg>
+<status status="PASS" starttime="20240126 10:21:36.991" endtime="20240126 10:21:36.992"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.989" endtime="20240126 10:21:36.992"/>
+</kw>
+<msg timestamp="20240126 10:21:36.992" level="INFO">Releasing item '29' with COMPLETED state and exception: None</msg>
+<status status="PASS" starttime="20240126 10:21:36.912" endtime="20240126 10:21:36.992"/>
+</kw>
+<status status="PASS" starttime="20240126 10:21:36.911" endtime="20240126 10:21:36.993"/>
+</test>
+<doc>Inhuman Insurance, Inc. Artificial Intelligence System robot.
+Shared settings and code.</doc>
+<status status="PASS" starttime="20240126 10:21:35.670" endtime="20240126 10:21:36.995"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Consumer">Consumer</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
